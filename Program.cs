@@ -2,6 +2,7 @@
 using for_Practice__1.EmployeeDependency;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace AccessSpecifiers
@@ -507,6 +508,310 @@ namespace AccessSpecifiers
     //            Console.WriteLine("ID = {0}, Name = {1}, Department = {2}", emp.ID, emp.Name, emp.Department);
     //        }
     //        Console.ReadKey();
+    //    }
+    //}
+    #endregion
+
+    #region Abstract Class
+    //public abstract class Shape
+    // {
+    //     public abstract void Draw();
+    // }
+    // public class Rectangle:Shape
+    // {
+    //     public override void Draw()
+    //     {
+    //         Console.WriteLine("Drawing Rectangle...");
+    //     }
+    // }
+    // public class Circle : Shape
+    // {
+    //     public override void Draw()
+    //     {
+    //         Console.WriteLine("Drawing Circle...");
+    //     }
+    // }
+    // public class TestAbstract
+    // {
+    //     public static void Main()
+    //     {
+    //         Shape s;
+    //         s = new Rectangle();
+    //         s.Draw();
+    //         s = new Circle();
+    //         s.Draw();
+    //     }
+    // }
+    #endregion
+
+    #region Interface Implementation
+    //public interface Drawable  //Interface
+    //{
+    //    void Draw();
+    //}
+    //public class Rectangle : Drawable
+    //{
+    //    public void Draw()
+    //    {
+    //        Console.WriteLine("Rectangle Drawing..");
+    //    }
+    //}
+    //public class Circle : Drawable
+    //{
+    //    public void Draw()
+    //    {
+    //        Console.WriteLine("Circle Drawing...");
+    //    }
+    //}
+    //public class TestInterface
+    //{
+    //    public static void Main()
+    //    {
+    //        Drawable d;
+    //        d = new Rectangle();
+    //        d.Draw();
+    //        d = new Circle();
+    //        d.Draw();
+
+    //    }
+    //}
+    #endregion
+
+    #region Public Access Moodifier
+    //class Program
+    //{
+    //    public string name = "Swapnil Padave";
+    //    public void msg(string msg)
+    //    {
+    //        Console.WriteLine("Hello " + msg);
+    //    }
+    //}
+    //class PublicTest
+    //{
+    //    static void Main()
+    //    {
+    //        Program p = new Program();
+    //        Console.WriteLine("Hello " + p.name);
+    //        p.msg("Developer Trainee..");
+    //    }
+    //}
+    #endregion
+
+    #region Protected Access Modifier
+    //class ProtectedTest
+    //{
+    //    protected string name = "Swapnil Padave";
+    //    protected void Msg(string msg)
+    //    {
+    //        Console.WriteLine("Hi " + msg);
+    //    }
+    //}
+    //class program :ProtectedTest
+    //{
+    //    static void Main()
+    //    {
+    //        program p = new program();
+    //        Console.WriteLine("Hi "+p.name);
+    //        p.Msg("There..");
+    //    }
+    //}
+    #endregion
+
+    #region Internal Access Modifier
+    //class InternalTest
+    //{
+    //    internal string name = "Swapnil Padave";
+    //    internal void Msg(string msg)
+    //    {
+    //        Console.WriteLine("Hi " + msg);
+    //    }
+    //}
+    //class program : InternalTest
+    //{
+    //    static void Main()
+    //    {
+    //        InternalTest internalTest = new InternalTest();
+    //        Console.WriteLine("Hi " + internalTest.name);
+    //        internalTest.Msg("There..");
+    //    }
+    //}
+    #endregion
+
+    #region Private Access Modifier
+    //class PrivateTest
+    //{
+    //    private string name = "Swapnil Padave";
+    //    private void Msg(string msg)
+    //    {
+    //        Console.WriteLine("Hi " + msg);
+    //    }
+    //    static void Main()
+    //    {
+    //        PrivateTest privateTest = new PrivateTest();
+    //        Console.WriteLine("Hi " + privateTest.name);
+    //        privateTest.Msg("There..");
+    //    }
+    //}
+    #endregion
+
+    #region Encapsulation 
+    //class Student
+    //{
+    //    public string ID { get; set; }
+    //    public string Name { get; set; }
+    //    public string Email { get; set; }
+    //}
+    //class Program
+    //{
+    //    public static void Main()
+    //    {
+    //        Student student1 = new Student();
+    //        Student student2 = new Student();
+    //        student1.ID = "999";
+    //        student1.Name = "Swapnil Padave";
+    //        student1.Email = "spadave7@gmail.com";
+
+    //        student2.ID = "111";
+    //        student2.Name = "Nilesh Pathak";
+    //        student2.Email = "NileshPathak@gmail.com";
+
+    //        Console.WriteLine("ID=" + student1.ID);
+    //        Console.WriteLine("Name=" + student1.Name);
+    //        Console.WriteLine("Email=" + student1.Email);
+    //        Console.WriteLine();
+    //        Console.WriteLine("ID=" + student2.ID);
+    //        Console.WriteLine("Name=" + student2.Name);
+    //        Console.WriteLine("Email=" + student2.Email);
+    //    }
+    //}
+    #endregion
+
+    #region Exception Handling
+    //class Example1
+    // {
+    //     public static void Main()
+    //     {
+    //         try
+    //         {
+    //             int a = 10;
+    //             int b = 0;
+    //             int result = a / b;
+    //         }
+    //         catch(Exception e)
+    //         {
+    //             Console.WriteLine(e);
+    //         }
+    //         Console.WriteLine("Rest Of The Code..");
+    //     }
+    // }
+
+    //class Example2
+    //{
+    //    public static void Main()
+    //    {
+    //        try
+    //        {
+    //            int a = 10;
+    //            int b = 0;
+    //            int result = a / b;
+    //        }
+    //        catch (Exception e)
+    //        {
+    //            Console.WriteLine(e);
+    //        }
+    //        finally
+    //        {
+    //            Console.WriteLine("Finally Block Executed..");
+    //        }
+    //        Console.WriteLine("Rest Of The Code..");
+    //    }
+    //}
+
+    //Error Example..
+    //class Example3
+    //{
+    //    public static void Main()
+    //    {
+    //        try
+    //        {
+    //            int a = 10;
+    //            int b = 0;
+    //            int result = a / b;
+    //        }
+    //        catch (NullReferenceException e)
+    //        {
+    //            Console.WriteLine(e);
+    //        }
+    //        finally
+    //        {
+    //            Console.WriteLine("Finally Block Executed..");
+    //        }
+    //        Console.WriteLine("Rest Of The Code..");
+    //    }
+    //}
+
+    #endregion
+
+    #region User Define Exception(Custom Exception)
+    //Example 1
+    //public class InvalidAgeException : Exception
+    //{
+    //    public InvalidAgeException(string message) : base(message)
+    //    {
+
+    //    }
+    //}
+    //public class TestUserDefinedException
+    //{
+    //    static void validate(int age)
+    //    {
+    //        if (age < 18)
+    //        {
+    //            throw new InvalidAgeException("Sorry, Age must be greater than 18");
+    //        }
+    //    }
+    //    public static void Main(string[] args)
+    //    {
+    //        try
+    //        {
+    //            validate(12);
+    //        }
+    //        catch (InvalidAgeException e)
+    //        { 
+    //            Console.WriteLine(e);
+    //        }
+    //        Console.WriteLine("Rest of the code");
+    //    }
+    //}
+
+    //Example 2
+    //public class InvalidPasswordException : Exception
+    //{
+    //    public InvalidPasswordException(string msg) : base(msg)
+    //    {
+
+    //    }
+    //}
+    //public class TestUserDefineException
+    //{
+    //    static void validate(int password)
+    //    {
+    //        if (password == 1234567)
+    //        {
+    //            throw new InvalidPasswordException("Sorry Wrong Password..");
+    //        }
+    //    }
+    //    public static void Main()
+    //    {
+    //        try
+    //        {
+    //            validate(890876);
+    //        }
+    //        catch(InvalidPasswordException p)
+    //        {
+    //            Console.WriteLine(p);
+    //        }
+    //        Console.WriteLine("Please Login Again.");
     //    }
     //}
     #endregion
