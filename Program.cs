@@ -1,4 +1,6 @@
-﻿using System;
+﻿using for_Practice__1.EmployeeDAL;
+using for_Practice__1.EmployeeDependency;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -489,6 +491,22 @@ namespace AccessSpecifiers
     //            Console.WriteLine(values.RollNo + " " + values.Name);
     //        }
 
+    //    }
+    //}
+    #endregion
+
+    #region Dependency Injection
+    //class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        EmployeeBL employeeBL = new EmployeeBL(new EmployeeDAL());
+    //        List<Employee> ListEmployee = employeeBL.GetAllEmployees();
+    //        foreach (Employee emp in ListEmployee)
+    //        {
+    //            Console.WriteLine("ID = {0}, Name = {1}, Department = {2}", emp.ID, emp.Name, emp.Department);
+    //        }
+    //        Console.ReadKey();
     //    }
     //}
     #endregion
